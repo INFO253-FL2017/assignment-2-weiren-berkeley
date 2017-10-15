@@ -55,4 +55,12 @@
     - Flask and Python work together as a program on server.
  4. List all of the possible GET and POST requests that your server returns a response for and describes what happens for each GET and POST request
     - When we type the URL in the browser. The browser makes a GET requests
-    to the server.
+    to the server. The server call the method defined to this URL and GET method.
+    The server returns response to this call.
+    - When we submit the content in contact Us.html page the browser request
+    a POST method which includes the form's infromation to the server. The server
+    calls the function defined on this API and use the information from the POST request.
+    - After the server get the POST request from the contact Us submittion he request a 
+    POST method to the MAILGUN API to ask to send an Email.
+    - Another GET request is ask from browser in 5 blog post by JavaScript which request the 
+    WeatherMap API to get the weather infomation of Berkeley. 
