@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Contact Us</title>
+		<link rel="stylesheet" href="static/css/style.css" type="text/css" />
+	</head>
+	<body>
+		<header>
+        <div class="navbar-list">
+          <a class="navbar-link" href="index">Homepage</a>
+          <a class="navbar-link" href="about">About Us</a>
+          <a class="navbar-link" href="contact">Contact Us</a>
+        </div>
+		</header>
+    <div class="notice">
+      <div id="noticeSuccess" class="">{{successnotice}}</div>
+      <div id="noticeName" class="">{{failnotice}}</div>
+      <div id="noticeEmail" class=""></div>
+      <div id="noticeSubject" class=""></div>
+      <div id="noticeMessage" class=""></div>
+    </div>
+    <div class="artical_title_contact_us"><a>Contact Us</a></div>
+    <div class="author_containter"></div>
+    <div class="blogcontainer">
+      <div class="author_name"><a>UC Berkeley</a></div>
+      <div class="blogcontent">
+        <div class="">
+          <form id="contact_form" class="contact_form" action="/email" method="POST">
+            <table>
+            <tr>
+              <th><span style="color:red">*</span> Name:</th>
+              <td><input type="text" id="Name" name="Name" value="" autofocus required placeholder="Your Name"></td>
+            </tr>
+            <tr>
+              <th><span style="color:red">*</span> Email:</th>
+              <td><input type="text" id="Email" name="Email" value="" required placeholder="Your Email"></td>
+            </tr>
+            <tr>
+              <th><span style="color:red">*</span> Subject:</th>
+              <td><input type="text" id="Subject" name="Subject" value="" required placeholder="Subject"></td>
+            </tr>
+            <tr>
+              <th><span style="color:red">*</span> Message:</th>
+              <td><textarea class="txt" id="Message" name="Message" required placeholder="Message"></textarea></td>
+            </tr>
+            </table>
+            <div class="contact_button">
+              <button type="button" onclick="resetForm()">Reset</button>
+              <button type="button" onclick="checkForm()">Submit</button>
+            </div>
+          </form>
+        </div>
+    	</div>
+    </div>
+		<footer>
+			<div class="navbar-list">
+          <a class="navbar-link" href="index">Homepage</a>
+          <a class="navbar-link" href="about">About Us</a>
+          <a class="navbar-link" href="contact">Contact Us</a>
+			</div>
+		</footer>
+        <script src="static/js/script.js"></script>
+  </body>
+</html>
