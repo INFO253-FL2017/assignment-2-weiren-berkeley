@@ -5,7 +5,7 @@ var xhttp = new XMLHttpRequest();
      document.getElementById("cityName").innerHTML = resp.name;
      document.getElementById("weatherMain").innerHTML = resp.weather[0].main;
      document.getElementById("weatherIco").src = "http://openweathermap.org/img/w/"+ resp.weather[0].icon+".png";
-     document.getElementById("temp").innerHTML = resp.main.temp-273.15+"°C";
+     document.getElementById("temp").innerHTML = (parseFloat(resp.main.temp)-273.15).toFixed(2)+"°C";
      document.getElementById("humidity").innerHTML = "Huminity: "+resp.main.humidity+"%";
 
     }
